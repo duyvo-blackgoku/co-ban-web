@@ -1,0 +1,103 @@
+﻿<html>
+<head>
+    <style>
+        table{
+            width:500px;
+            margin:auto;
+        }
+        div{
+            width: 500px;
+            margin: auto;
+        }
+
+        input [type = number]{
+            width :50px;
+        }
+        input [type = number] :nth-child(1){
+            width:auto;
+        }
+        td:nth-child(2n+1){
+            font-weight :bold;
+        }
+        td
+    </style>
+</head>
+<body>
+    <div>
+        <h1 align="center" style="color:blue">Đăng ký du lịch</h1>
+        <table border="1" style="border-collapse:collapse; background-color:#fffacd" >
+            <tr>
+                <td style="color:blue">
+                    Họ và tên
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td style="color:blue">
+                    Địa chỉ
+                </td>
+                <td>
+                    <input type="text" />
+                </td>
+            </tr>
+            <tr>
+                <td style="color:blue">
+                    Điện Thoại
+                </td>
+                <td>
+                    <input type="number" />
+                </td>
+            </tr>
+            <tr>
+                <td style="color:blue">
+                    Khách Việt Nam
+                </td>
+                <td>
+                    <input type="radio" />
+                </td>
+            </tr>
+            <tr>
+                <td style="color:blue">
+                    Chọn Tour
+                </td>
+                <td>
+                    <select>
+                        <optgroup label="Miền Bắc">
+                            <option> Buôn Mê Thuộc-Gia Lai-Kontumm</option>
+                        </optgroup>
+                        <optgroup label="Miền Nam">
+                            <option> Tây Ninh-Đồng Tháp-Bến Tre</option>
+                        </optgroup>
+                        <optgroup label="Miền Trung">
+                            <option> Thanh Hóa-Nghệ An-Quảng Trị</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr style="color:blue">
+                <td>Phương Tiện</td>
+                <td><input type="radio" name="ptien" />Máy Bay <input type="radio" name="ptien" />Xe ô tô</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <fieldset>
+                        <legend>Số lượng đoàn khách</legend>
+                        Người lớn <input type="number" style="width:60px"  /> Trẻ em <input type="number" style="width:60px" />
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td style="color:blue">Ghi chú thêm</td>
+                <td><textarea></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:center"><input type="button" value="Đồng ý" />
+                <td>
+            </tr>
+        </table>
+    </div>
+    
+</body>
+</html>
